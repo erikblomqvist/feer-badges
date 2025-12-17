@@ -1,0 +1,121 @@
+body {
+    display: grid;
+    place-items: center;
+    
+    margin: 0;
+    background-color: #0E0E10;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 72px);
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+
+    width: 100vw;
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 72px;
+    height: 72px;
+}
+
+figcaption {
+    margin-block-start: 0.5rem;
+    
+    font-weight: bold;
+    text-align: center;
+}
+
+.cta {
+    display: flex;
+    gap: 1rem;
+}
+
+button, a {
+    border-radius: 9000px;
+    background-color: #9147ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    background-color: #7c36e6;
+}
+
+button:active, a:active {
+    background-color: #6b2ed1;
+}
+
+.example {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 340px;
+    height: 100vh;
+    
+    background-color: #18181B;
+}
+
+.example-item {
+    display: block;
+    
+    padding: 0.5rem 1rem;
+
+    font-family: Inter, "Noto Sans Arabic", Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    .user {
+        display: inline-block;
+        vertical-align: baseline;
+
+        margin: -0.2rem;
+        padding-block: 0.2rem;
+        
+        line-height: 21px;
+    }
+
+    .badges {
+        margin-inline-end: 0.25em;
+    }
+
+    img {
+        vertical-align: middle;
+        
+        width: 18px;
+        height: 18px;
+    }
+
+    .username {
+        font-weight: 600;
+
+        &.seven-tv {
+            background-image: repeating-radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 15%, rgb(187, 255, 0) 35%, rgb(153, 255, 0) 50%);
+            background-size: 100% 100%;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(rgb(187, 255, 0) 0px 0px 4px);
+            color: rgb(142, 255, 65);
+        }
+    }
+}
